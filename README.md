@@ -1,6 +1,4 @@
-# kickstart.nvim
-
-Personal nvim config. Fork of [kickstart.nvim]("https://github.com/nvim-lua/kickstart.nvim")
+#nvim config
 
 #### TODO
 
