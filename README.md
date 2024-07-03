@@ -1,11 +1,11 @@
 #nvim config
 
 #### Shortcuts
-- gf - Format the code (requires LSP)
-- gd - Go to definition (requires LSP)
-- <leader>ff - Fuzzy search files using telescope
-- <leader><leader> - Fuzzy search files in the current buffer
-- <leader>fw - Fuzzy search for words
+- 'gf' -> Format the code (requires LSP)
+- 'gd' -> Go to definition (requires LSP)
+- '<leader>ff' -> Fuzzy search files using telescope
+- '<leader><leader>' -> Fuzzy search files in the current buffer
+- '<leader>fw' -> Fuzzy search for words
 
 #### TODO
 
