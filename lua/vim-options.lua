@@ -3,6 +3,7 @@ vim.opt.relativenumber = true
 vim.g.mapleader = ' '
 vim.opt.cursorline = true
 vim.opt.scrolloff = 15
+vim.opt.signcolumn = 'yes'
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
