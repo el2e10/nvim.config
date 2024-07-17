@@ -13,3 +13,18 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show error
 
 vim.opt.mouse = 'a'
 
+-- Remove the highligh of search
+vim.opt.hlsearch = true
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
+-- Yanking highlight
+vim.api.nvim_create_autocmd('TextYankPost', {
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+})
+
+
+-- Code folding
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"

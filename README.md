@@ -6,6 +6,9 @@
 - 'Leader-ff' -> Fuzzy search files using telescope
 - 'Leader-Leader' -> Fuzzy search files in the current buffer
 - 'Leader-fw' -> Fuzzy search for words
+- 'zA' -> Toggle code folding(everything) 
+- 'za' -> Toggle code folding(current) 
+
 #### Harpoon
 - 'Leader-hx' -> Mark the file
 - 'Leader-hm' -> See the files
