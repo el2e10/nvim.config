@@ -20,6 +20,7 @@ return {
 
 			lspconfig.lua_ls.setup {}
 			lspconfig.tsserver.setup {}
+			lspconfig.ruff.setup{}
 			lspconfig.gopls.setup {
 
 				settings = {
