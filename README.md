@@ -8,6 +8,11 @@
 - 'Leader-fw' -> Fuzzy search for words
 - 'zA' -> Toggle code folding(everything) 
 - 'za' -> Toggle code folding(current) 
+- 'gcc' -> Comment the line(Normal Mode)
+- 'gc' -> Comment the linewise(Visual Mode)
+- 'gb' -> Comment the blockwise(Visual Mode)
+
+
 
 #### Harpoon
 - 'Leader-hx' -> Mark the file
