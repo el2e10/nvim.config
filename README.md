@@ -3,15 +3,17 @@
 ### Shortcuts
 - 'gf' -> Format the code (requires LSP)
 - 'gd' -> Go to definition (requires LSP)
+- 'Leader-xx' -> View diagnosis in the current file
+- 'Leader-xX' -> View diagnosis in the entire project
 - 'Leader-ff' -> Fuzzy search files using telescope
 - 'Leader-Leader' -> Fuzzy search files in the current buffer
 - 'Leader-fw' -> Fuzzy search for words
+- 'Leader-fe' -> Toggle file explorer
 - 'zA' -> Toggle code folding(everything) 
 - 'za' -> Toggle code folding(current) 
 - 'gcc' -> Comment the line(Normal Mode)
 - 'gc' -> Comment the linewise(Visual Mode)
 - 'gb' -> Comment the blockwise(Visual Mode)
-
 
 
 #### Harpoon
