@@ -9,7 +9,7 @@ return {
 		'williamboman/mason-lspconfig.nvim',
 		config = function()
 			require('mason-lspconfig').setup {
-				ensure_installed = { 'lua_ls', 'gopls', 'ruff', 'tsserver' },
+				ensure_installed = { 'lua_ls', 'gopls', 'ruff', 'tsserver', 'pyright', 'biome', 'clangd' },
 			}
 		end,
 	},
@@ -20,7 +20,12 @@ return {
 
 			lspconfig.lua_ls.setup {}
 			lspconfig.tsserver.setup {}
-			lspconfig.ruff.setup{}
+			lspconfig.ruff.setup {}
+			lspconfig.pyright.setup {}
+			lspconfig.clangd.setup {}
+			lspconfig.biome.setup {
+				filetypes = { 'javascript', 'typescript', 'json' },
+			}
 			lspconfig.gopls.setup {
 
 				settings = {
@@ -33,8 +38,6 @@ return {
 					},
 				},
 			}
-			lspconfig.ruff.setup {}
-
 			vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 			vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
 			vim.keymap.set('n', 'gf', vim.lsp.buf.format, {})
