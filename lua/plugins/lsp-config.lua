@@ -9,7 +9,7 @@ return {
 		'williamboman/mason-lspconfig.nvim',
 		config = function()
 			require('mason-lspconfig').setup {
-				ensure_installed = { 'lua_ls', 'gopls', 'ruff', 'tsserver', 'pyright', 'biome', 'clangd' },
+				ensure_installed = { 'lua_ls', 'gopls', 'ruff', 'tsserver', 'pyright', 'biome', 'clangd', 'zls' },
 			}
 		end,
 	},
@@ -23,6 +23,7 @@ return {
 			lspconfig.ruff.setup {}
 			lspconfig.pyright.setup {}
 			lspconfig.clangd.setup {}
+			lspconfig.zls.setup{}
 			lspconfig.biome.setup {
 				filetypes = { 'javascript', 'typescript', 'json' },
 			}
@@ -92,7 +93,7 @@ return {
 						luasnip.lsp_expand(args.body)
 					end,
 				},
-				completion = { completeopt = 'menu,menuone,noinsert' },
+				completion = { completeopt = 'menu,menuone,noinsert', autocomplete = false },
 
 				-- For an understanding of why these mappings were
 				-- chosen, you will need to read `:help ins-completion`
