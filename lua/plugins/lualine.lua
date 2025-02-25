@@ -3,9 +3,15 @@ return {
 	config = function()
 		require('lualine').setup {
 			options = {
-				theme = 'dracula',
-				disabled_filetypes = { statusline = { 'Neotree' } },
+				theme = 'OceanicNext',
+				component_separators = '',
+				section_separators = '',
+				disabled_filetypes = { statusline = { 'neo-tree' } },
+				globalstatus = false
 			},
+			sections = {
+				lualine_x = {"datetime", "filetype"}
+			}
 		}
 	end,
 }
