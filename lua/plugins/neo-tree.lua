@@ -12,6 +12,9 @@ return {
 	config = function()
 		require('neo-tree').setup {
 			close_if_last_window = true,
+			window = {
+				position = 'float',
+			},
 			file_size = {
 				enabled = true,
 				required_width = 64, -- min width of window required to show this column

@@ -6,19 +6,10 @@ return {
 		require('catppuccin').setup {
 			flavor = 'mocha',
 			no_italic = true,
+			integrations = {
+				neotree = true
+			}
 		}
 		vim.cmd.colorscheme 'catppuccin'
 	end,
 }
---
---
--- return {
--- 	'rose-pine/neovim',
--- 	name = 'rose-pine',
--- 	config = function()
--- 		vim.cmd.colorscheme 'rose-pine'
--- 		require('rose-pine').setup {
--- 			style = { italics = false },
--- 		}
--- 	end,
--- }

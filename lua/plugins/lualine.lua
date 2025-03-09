@@ -11,7 +11,11 @@ return {
 			},
 			sections = {
 				lualine_x = {"datetime", "filetype"}
+			},
+			inactive_sections = {
+				lualine_x = {}
 			}
+
 		}
 	end,
 }
