@@ -14,6 +14,8 @@
 - 'gcc' -> Comment the line(Normal Mode)
 - 'gc' -> Comment the linewise(Visual Mode)
 - 'gb' -> Comment the blockwise(Visual Mode)
+- 'gy' -> Global copy
+- 'gp' -> Global paste
 
 
 #### Harpoon

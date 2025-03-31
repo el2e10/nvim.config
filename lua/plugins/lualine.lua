@@ -3,19 +3,20 @@ return {
 	config = function()
 		require('lualine').setup {
 			options = {
-				theme = 'OceanicNext',
+				theme = 'onedark',
 				component_separators = '',
 				section_separators = '',
 				disabled_filetypes = { statusline = { 'neo-tree' } },
-				globalstatus = false
+				globalstatus = false,
 			},
 			sections = {
-				lualine_x = {"datetime", "filetype"}
+				lualine_c = { 'filename', 'searchcount' },
+				lualine_x = { 'datetime', 'filetype' },
+				lualine_z = { 'selectioncount', 'location' },
 			},
 			inactive_sections = {
-				lualine_x = {}
-			}
-
+				lualine_x = {},
+			},
 		}
 	end,
 }

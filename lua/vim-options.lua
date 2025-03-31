@@ -1,3 +1,4 @@
+vim.opt.synmaxcol = 500
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.g.mapleader = ' '
@@ -37,3 +38,14 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrwSettings = 1
 vim.g.loaded_netrwFileHandlers = 1
+
+vim.keymap.set('v', 'gy', '"+y', { desc = 'yank to system clipboard' })
+vim.keymap.set('n', 'gp', '"+p', { desc = 'paste from system clipboard' })
+
+
+-- Split
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+vim.opt.showmode = false
+

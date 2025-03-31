@@ -6,6 +6,10 @@ return {
 		local telescope = require 'telescope'
 		local builtin = require 'telescope.builtin'
 		telescope.setup {
+			defaults = {
+				hidden = true,
+				file_ignore_patterns = { '.git/' },
+			},
 			pickers = {
 				find_files = {
 					theme = 'ivy',

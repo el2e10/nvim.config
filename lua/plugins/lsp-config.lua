@@ -9,7 +9,7 @@ return {
 		'williamboman/mason-lspconfig.nvim',
 		config = function()
 			require('mason-lspconfig').setup {
-				ensure_installed = { 'lua_ls', 'gopls', 'ruff', 'pyright', 'biome', 'clangd', 'zls', "ts_ls" },
+				ensure_installed = { 'lua_ls', 'gopls', 'ruff', 'pyright', 'biome', 'clangd', 'zls', 'ts_ls' },
 			}
 		end,
 	},
@@ -20,12 +20,14 @@ return {
 
 			lspconfig.lua_ls.setup {}
 			lspconfig.ruff.setup {}
-			lspconfig.pyright.setup {}
 			lspconfig.clangd.setup {}
+			lspconfig.pyright.setup {}
 			lspconfig.zls.setup {}
 			lspconfig.ts_ls.setup {}
 			lspconfig.biome.setup {
+				cmd = { 'biome', 'lsp-proxy' },
 				filetypes = { 'javascript', 'typescript', 'json' },
+				single_file_support = true,
 			}
 			lspconfig.gopls.setup {
 
