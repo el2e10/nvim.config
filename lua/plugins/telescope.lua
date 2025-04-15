@@ -7,8 +7,9 @@ return {
 		local builtin = require 'telescope.builtin'
 		telescope.setup {
 			defaults = {
-				hidden = true,
-				file_ignore_patterns = { '.git/' },
+				preview = {
+					treesitter = false,
+				},
 			},
 			pickers = {
 				find_files = {

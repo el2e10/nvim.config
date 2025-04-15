@@ -19,7 +19,11 @@ return {
 			local lspconfig = require 'lspconfig'
 
 			lspconfig.lua_ls.setup {}
-			lspconfig.ruff.setup {}
+			lspconfig.ruff.setup {
+				settings = {
+					args = { '--ignore', 'E501' }, -- Pass the ignore flag to Ruff
+				},
+			}
 			lspconfig.clangd.setup {}
 			lspconfig.pyright.setup {}
 			lspconfig.zls.setup {}
@@ -108,7 +112,7 @@ return {
 					-- Manually trigger a completion from nvim-cmp.
 					--  Generally you don't need this, because nvim-cmp will display
 					--  completions whenever it has completion options available.
-					['<C-Space>'] = cmp.mapping.complete {},
+					['<C-x>'] = cmp.mapping.complete {},
 
 					-- Think of <c-l> as moving to the right of your snippet expansion.
 					--  So if you have a snippet that's like:

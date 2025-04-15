@@ -41,6 +41,12 @@ vim.g.loaded_netrwFileHandlers = 1
 
 vim.keymap.set('v', 'gy', '"+y', { desc = 'yank to system clipboard' })
 vim.keymap.set('n', 'gp', '"+p', { desc = 'paste from system clipboard' })
+vim.keymap.set('n', '<leader>wh', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+vim.keymap.set('n', '<leader>wt', '<C-w><C-t>', { desc = 'Move focus to the left window' })
+vim.keymap.set('n', '<leader>wl', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+vim.keymap.set('n', '<leader>wj', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+vim.keymap.set('n', '<leader>wk', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
 
 
 -- Split

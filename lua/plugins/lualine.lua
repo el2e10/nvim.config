@@ -3,7 +3,7 @@ return {
 	config = function()
 		require('lualine').setup {
 			options = {
-				theme = 'onedark',
+				theme = 'gruvbox_light',
 				component_separators = '',
 				section_separators = '',
 				disabled_filetypes = { statusline = { 'neo-tree' } },

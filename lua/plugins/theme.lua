@@ -1,15 +1,33 @@
+-- return {
+-- 	'catppuccin/nvim',
+-- 	name = 'catppuccin',
+-- 	priority = 1000,
+-- 	config = function()
+-- 		require('catppuccin').setup {
+-- 			flavor = 'mocha',
+-- 			no_italic = true,
+-- 			integrations = {
+-- 				neotree = true
+-- 			}
+-- 		}
+-- 		vim.cmd.colorscheme 'catppuccin'
+-- 	end,
+-- }
+--
+--
 return {
-	'catppuccin/nvim',
-	name = 'catppuccin',
+	'ellisonleao/gruvbox.nvim',
 	priority = 1000,
 	config = function()
-		require('catppuccin').setup {
-			flavor = 'mocha',
-			no_italic = true,
-			integrations = {
-				neotree = true
-			}
+		require('gruvbox').setup {
+			italic = {
+				strings = false,
+				emphasis = false,
+				comments = true,
+				operators = false,
+				folds = true,
+			},
 		}
-		vim.cmd.colorscheme 'catppuccin'
+		vim.cmd 'colorscheme gruvbox'
 	end,
 }
