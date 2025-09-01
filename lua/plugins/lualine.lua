@@ -3,15 +3,16 @@ return {
 	config = function()
 		require('lualine').setup {
 			options = {
-				theme = 'gruvbox_light',
+				theme = 'vague',
 				component_separators = '',
 				section_separators = '',
 				disabled_filetypes = { statusline = { 'neo-tree' } },
 				globalstatus = false,
 			},
 			sections = {
-				lualine_c = { 'filename', 'searchcount' },
-				lualine_x = { 'datetime', 'filetype' },
+				lualine_b = {'branch', 'diagnostics'},
+				lualine_c = { { 'filename', path = 1 }, 'searchcount' },
+				lualine_x = {},
 				lualine_z = { 'selectioncount', 'location' },
 			},
 			inactive_sections = {

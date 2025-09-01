@@ -55,3 +55,5 @@ vim.opt.splitbelow = true
 
 vim.opt.showmode = false
 
+
+
