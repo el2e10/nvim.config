@@ -35,59 +35,17 @@ return {
 		vim.cmd 'colorscheme vague'
 	end,
 }
+--
 -- return {
--- 	'zenbones-theme/zenbones.nvim',
+-- 	dir="/Users/eldhoittangeorge/Personal/Projects/black-and-green.nvim/",
 -- 	lazy = false,
 -- 	priority = 1000,
 -- 	config = function()
--- 		vim.g.zenbones_darken_comments = 45
--- 		vim.g.zenbones_compat = 1
--- 		vim.cmd.colorscheme 'zenbones'
--- 	end,
--- }
--- return {
--- 	'rose-pine/neovim',
--- 	name = 'rose-pine',
--- 	config = function()
--- 		require('rose-pine').setup {
--- 			variant = 'moon',
--- 			styles = {
--- 				italic = false,
--- 			},
+-- 		require('neomodern').setup {
+-- 			-- optional configuration here
+-- 			theme = 'gyokuro',
+-- 			variant = 'dark',
 -- 		}
--- 		vim.cmd 'colorscheme rose-pine'
--- 	end,
--- }
--- return {
--- 	'catppuccin/nvim',
--- 	name = 'catppuccin',
--- 	priority = 1000,
--- 	config = function()
--- 		require('catppuccin').setup {
--- 			flavor = 'mocha',
--- 			no_italic = true,
--- 			integrations = {
--- 				neotree = true
--- 			}
--- 		}
--- 		vim.cmd.colorscheme 'catppuccin'
--- 	end,
--- }
---
---
--- return {
--- 	'ellisonleao/gruvbox.nvim',
--- 	priority = 1000,
--- 	config = function()
--- 		require('gruvbox').setup {
--- 			italic = {
--- 				strings = false,
--- 				emphasis = false,
--- 				comments = true,
--- 				operators = false,
--- 				folds = true,
--- 			},
--- 		}
--- 		vim.cmd 'colorscheme gruvbox'
+-- 		require('neomodern').load()
 -- 	end,
 -- }

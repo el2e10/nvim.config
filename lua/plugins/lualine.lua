@@ -3,7 +3,6 @@ return {
 	config = function()
 		require('lualine').setup {
 			options = {
-				theme = 'vague',
 				component_separators = '',
 				section_separators = '',
 				disabled_filetypes = { statusline = { 'neo-tree' } },

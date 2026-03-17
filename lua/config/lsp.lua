@@ -1,7 +1,6 @@
 -- Servers
 vim.lsp.config('lua_ls', {})
 vim.lsp.enable 'lua_ls'
-
 vim.lsp.config('ty', {
 	cmd = { 'ty', 'server' },
 	filetypes = { 'python' },
@@ -38,6 +37,9 @@ vim.lsp.config('biome', {
 vim.lsp.enable 'biome'
 
 vim.lsp.config('gopls', {
+	filetypes = { 'go' },
+	cmd = { "gopls" },
+	root_markers = { 'go.work', 'go.mod' },
 	settings = {
 		gopls = {
 			analyses = { unusedparams = true },

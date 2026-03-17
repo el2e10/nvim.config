@@ -6,6 +6,7 @@ return {
 			debug = true,
 			sources = {
 				null_ls.builtins.formatting.stylua,
+				null_ls.builtins.formatting.gofmt,
 				null_ls.builtins.formatting.ruff,
 			},
 		}
