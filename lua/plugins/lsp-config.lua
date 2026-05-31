@@ -9,7 +9,7 @@ return {
 		'williamboman/mason-lspconfig.nvim',
 		config = function()
 			require('mason-lspconfig').setup {
-				ensure_installed = { 'lua_ls', 'gopls', 'biome', 'clangd', 'zls', 'ts_ls', 'ty' },
+				ensure_installed = { 'lua_ls', 'gopls', 'biome', 'ts_ls', 'ty' },
 			}
 		end,
 	},

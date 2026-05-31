@@ -1,4 +1,14 @@
--- Servers
+vim.lsp.config('dartls', {
+	cmd = { 'dart', 'language-server', '--protocol=lsp' },
+	filetypes = { 'dart' },
+	root_markers = {
+		'pubspec.yaml',
+		'analysis_options.yaml',
+		'.git',
+	},
+})
+vim.lsp.enable 'dartls'
+
 vim.lsp.config('lua_ls', {})
 vim.lsp.enable 'lua_ls'
 vim.lsp.config('ty', {
@@ -20,11 +30,15 @@ vim.lsp.config('ty', {
 })
 vim.lsp.enable 'ty'
 
-vim.lsp.config('clangd', {})
-vim.lsp.enable 'clangd'
+vim.lsp.config("clangd", {
+    cmd = {
+        "clangd",
+        "--background-index",
+        "--clang-tidy",
+    },
+})
 
-vim.lsp.config('zls', {})
-vim.lsp.enable 'zls'
+vim.lsp.enable("clangd")
 
 vim.lsp.config('ts_ls', {})
 vim.lsp.enable 'ts_ls'
